@@ -1,4 +1,24 @@
+import json
+import os
+
+
+FILE_NAME = "students.json"
 students = []
+
+
+def load_students():
+    global students
+
+    if os.path.exists(FILE_NAME):
+        with open(FILE_NAME, "r", encoding="utf-8") as file:
+            students = json.load(file)
+    else:
+        students = []
+
+
+def save_students():
+    with open(FILE_NAME, "w", encoding="utf-8") as file:
+        json.dump(students, file, indent=4)
 
 
 def add_student():
@@ -11,7 +31,9 @@ def add_student():
     }
 
     students.append(student)
-    print("Student added successfully.")
+    save_students()
+
+    print("Student added and saved successfully.")
 
 
 def show_students():
@@ -36,6 +58,8 @@ def calculate_average():
 
 
 def main():
+    load_students()
+
     while True:
         print("\nStudent Performance Tracker")
         print("1. Add Student")
