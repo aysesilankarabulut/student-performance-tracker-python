@@ -1,64 +1,65 @@
-# Öğrenci Başarı Analizi Projesi
+# Student Performance Tracker
 
-Bu proje, öğrenci başarı verilerini analiz etmek ve tahmin modelleri geliştirmek için hazırlanmıştır.
+This is a simple Python project for tracking student grades.  
+The project was created to practice basic Python programming concepts and improve GitHub portfolio skills.
 
-## Gereksinimler
+## Features
 
-Programın çalışması için aşağıdaki Python kütüphanelerinin yüklü olması gerekir:
+- Add students
+- Show student list
+- Calculate class average
+- Simple menu system
+- Save student data to a JSON file
 
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
+## Technologies Used
 
-## Kurulum
+- Python
+- JSON
+- Git
+- GitHub
 
-Gerekli kütüphaneleri yüklemek için:
+## How to Run
+
+First, make sure Python is installed on your computer.
+
+Then run the project with this command:
 
 ```bash
-pip install pandas numpy matplotlib scikit-learn
+python main.py
 ```
 
-## Çalıştırma
+## Example Menu
 
-Projeyi çalıştırmak için terminalde aşağıdaki komutu kullanın:
-
-```bash
-python src/main.py
+```text
+Student Performance Tracker
+1. Add Student
+2. Show Students
+3. Calculate Average
+4. Exit
+Choose an option:
 ```
 
-## Çıktılar
+## Project Purpose
 
-Program çalıştırıldığında aşağıdaki çıktılar üretilir:
+The purpose of this project is to practice fundamental Python topics such as:
 
-- **Grafikler**: `outputs/graphs/` klasöründe
-  - final_notlari_histogram.png
-  - calisma_saati_final_notu.png
-  - sonuc_dagilimi_bar.png
+- Variables
+- Lists
+- Dictionaries
+- Functions
+- Loops
+- Conditional statements
+- User input
+- File handling with JSON
 
-- **Rapor**: `outputs/reports/project_report.txt`
-  - Veri analizi sonuçları
-  - Model performans metrikleri
-  - Genel değerlendirme
+## Future Improvements
 
-## Proje Yapısı
+- Add delete student feature
+- Add update grade feature
+- Add better error handling
+- Create a simple graphical interface
 
-```
-project/
-│
-├── data/
-│   └── students_performance.csv
-│
-├── src/
-│   ├── main.py
-│   ├── data_loader.py
-│   ├── analyzer.py
-│   ├── visualizer.py
-│   └── model_trainer.py
-│
-├── outputs/
-│   ├── graphs/
-│   └── reports/
-│
-└── README.md
-```
+## Author
+
+Created by **Silan Karabulut**  
+Computer Engineering Student
