@@ -10,6 +10,7 @@ The project was created to practice basic Python programming concepts and improv
 - Calculate class average
 - Simple menu system
 - Save student data to a JSON file
+- Validate student name and grade inputs
 
 ## Technologies Used
 
