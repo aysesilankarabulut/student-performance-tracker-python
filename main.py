@@ -20,10 +20,27 @@ def save_students():
     with open(FILE_NAME, "w", encoding="utf-8") as file:
         json.dump(students, file, indent=4)
 
+def get_valid_grade():
+    while True:
+        try:
+            grade = float(input("Enter student grade: "))
+
+            if 0 <= grade <= 100:
+                return grade
+            else:
+                print("Grade must be between 0 and 100.")
+
+        except ValueError:
+            print("Please enter a valid number.")
 
 def add_student():
-    name = input("Enter student name: ")
-    grade = float(input("Enter student grade: "))
+    name = input("Enter student name: ").strip()
+
+    if not name:
+        print("Student name cannot be empty.")
+        return
+
+    grade = get_valid_grade()
 
     student = {
         "name": name,
@@ -34,7 +51,6 @@ def add_student():
     save_students()
 
     print("Student added and saved successfully.")
-
 
 def show_students():
     if not students:
