@@ -4,15 +4,15 @@
         "grade": 90.0
     },
     {
-        "name": "ayse",
-        "grade": 90.0
-    },
-    {
         "name": "abc",
         "grade": 150.0
     },
     {
         "name": "abc",
         "grade": 86.0
+    },
+    {
+        "name": "ayse",
+        "grade": 85.0
     }
 ]

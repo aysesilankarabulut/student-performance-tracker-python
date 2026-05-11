@@ -73,6 +73,27 @@ def calculate_average():
     print(f"Class average: {average:.2f}")
 
 
+def delete_student():
+    if not students:
+        print("No students found.")
+        return
+
+    name = input("Enter student name: ").strip()
+
+    if not name:
+        print("Student name cannot be empty.")
+        return
+
+    for student in students:
+        if student['name'].lower() == name.lower():
+            students.remove(student)
+            save_students()
+            print("Student deleted successfully.")
+            return
+
+    print("Student not found.")
+
+
 def main():
     load_students()
 
@@ -81,7 +102,8 @@ def main():
         print("1. Add Student")
         print("2. Show Students")
         print("3. Calculate Average")
-        print("4. Exit")
+        print("4. Delete Student")
+        print("5. Exit")
 
         choice = input("Choose an option: ")
 
@@ -92,6 +114,8 @@ def main():
         elif choice == "3":
             calculate_average()
         elif choice == "4":
+            delete_student()
+        elif choice == "5":
             print("Exiting program...")
             break
         else:
