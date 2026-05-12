@@ -9,6 +9,7 @@ The project was created to practice basic Python programming concepts and improv
 - Show student list
 - Calculate class average
 - Delete students by name
+- Update student grades
 - Simple menu system
 - Save student data to a JSON file
 - Validate student name and grade inputs
@@ -38,7 +39,8 @@ Student Performance Tracker
 2. Show Students
 3. Calculate Average
 4. Delete Student
-5. Exit
+5. Update Student Grade
+6. Exit
 Choose an option:
 ```
 

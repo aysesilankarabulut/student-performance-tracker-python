@@ -94,6 +94,28 @@ def delete_student():
     print("Student not found.")
 
 
+def update_student_grade():
+    if not students:
+        print("No students found.")
+        return
+
+    name = input("Enter student name: ").strip()
+
+    if not name:
+        print("Student name cannot be empty.")
+        return
+
+    for student in students:
+        if student['name'].lower() == name.lower():
+            new_grade = get_valid_grade()
+            student['grade'] = new_grade
+            save_students()
+            print("Student grade updated successfully.")
+            return
+
+    print("Student not found.")
+
+
 def main():
     load_students()
 
@@ -103,7 +125,8 @@ def main():
         print("2. Show Students")
         print("3. Calculate Average")
         print("4. Delete Student")
-        print("5. Exit")
+        print("5. Update Student Grade")
+        print("6. Exit")
 
         choice = input("Choose an option: ")
 
@@ -116,6 +139,8 @@ def main():
         elif choice == "4":
             delete_student()
         elif choice == "5":
+            update_student_grade()
+        elif choice == "6":
             print("Exiting program...")
             break
         else:
