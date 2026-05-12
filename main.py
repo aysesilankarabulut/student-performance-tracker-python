@@ -116,6 +116,18 @@ def update_student_grade():
     print("Student not found.")
 
 
+def show_highest_lowest_grade():
+    if not students:
+        print("No students found.")
+        return
+
+    highest_student = max(students, key=lambda student: student['grade'])
+    lowest_student = min(students, key=lambda student: student['grade'])
+
+    print(f"\nHighest Grade: {highest_student['name']} - {highest_student['grade']}")
+    print(f"Lowest Grade: {lowest_student['name']} - {lowest_student['grade']}")
+
+
 def main():
     load_students()
 
@@ -126,7 +138,8 @@ def main():
         print("3. Calculate Average")
         print("4. Delete Student")
         print("5. Update Student Grade")
-        print("6. Exit")
+        print("6. Show Highest and Lowest Grade")
+        print("7. Exit")
 
         choice = input("Choose an option: ")
 
@@ -141,6 +154,8 @@ def main():
         elif choice == "5":
             update_student_grade()
         elif choice == "6":
+            show_highest_lowest_grade()
+        elif choice == "7":
             print("Exiting program...")
             break
         else:

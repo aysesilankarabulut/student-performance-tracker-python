@@ -10,6 +10,7 @@ The project was created to practice basic Python programming concepts and improv
 - Calculate class average
 - Delete students by name
 - Update student grades
+- Show highest and lowest student grades
 - Simple menu system
 - Save student data to a JSON file
 - Validate student name and grade inputs
@@ -40,7 +41,8 @@ Student Performance Tracker
 3. Calculate Average
 4. Delete Student
 5. Update Student Grade
-6. Exit
+6. Show Highest and Lowest Grade
+7. Exit
 Choose an option:
 ```
 
