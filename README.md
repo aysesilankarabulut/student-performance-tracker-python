@@ -1,7 +1,7 @@
 # Student Performance Tracker
 
-This is a simple Python project for tracking student grades.  
-The project was created to practice basic Python programming concepts and improve GitHub portfolio skills.
+Student Performance Tracker is a beginner-friendly Python project for managing student grades.  
+The project was created to practice Python fundamentals, file handling, input validation, and GitHub portfolio development.
 
 ## Features
 
@@ -10,11 +10,11 @@ The project was created to practice basic Python programming concepts and improv
 - Calculate class average
 - Delete students by name
 - Update student grades
-- Show highest and lowest student grades
 - Search students by name
-- Simple menu system
-- Save student data to a JSON file
+- Show highest and lowest student grades
 - Validate student name and grade inputs
+- Save student data to a JSON file
+- Simple menu-based interface
 
 ## Technologies Used
 
@@ -59,14 +59,16 @@ The purpose of this project is to practice fundamental Python topics such as:
 - Loops
 - Conditional statements
 - User input
+- Error handling
 - File handling with JSON
 
 ## Future Improvements
 
-- Add delete student feature
-- Add update grade feature
-- Add better error handling
-- Create a simple graphical interface
+- Add sorting feature
+- Add report export feature
+- Add a graphical user interface
+- Add unit tests
+- Convert the project into a small desktop application
 
 ## Author
 
