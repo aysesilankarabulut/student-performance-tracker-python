@@ -128,6 +128,25 @@ def show_highest_lowest_grade():
     print(f"Lowest Grade: {lowest_student['name']} - {lowest_student['grade']}")
 
 
+def search_student():
+    if not students:
+        print("No students found.")
+        return
+
+    name = input("Enter student name: ").strip()
+
+    if not name:
+        print("Student name cannot be empty.")
+        return
+
+    for student in students:
+        if student['name'].lower() == name.lower():
+            print(f"Student found: {student['name']} - Grade: {student['grade']}")
+            return
+
+    print("Student not found.")
+
+
 def main():
     load_students()
 
@@ -139,7 +158,8 @@ def main():
         print("4. Delete Student")
         print("5. Update Student Grade")
         print("6. Show Highest and Lowest Grade")
-        print("7. Exit")
+        print("7. Search Student")
+        print("8. Exit")
 
         choice = input("Choose an option: ")
 
@@ -156,6 +176,8 @@ def main():
         elif choice == "6":
             show_highest_lowest_grade()
         elif choice == "7":
+            search_student()
+        elif choice == "8":
             print("Exiting program...")
             break
         else:

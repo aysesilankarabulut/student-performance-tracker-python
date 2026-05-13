@@ -11,6 +11,7 @@ The project was created to practice basic Python programming concepts and improv
 - Delete students by name
 - Update student grades
 - Show highest and lowest student grades
+- Search students by name
 - Simple menu system
 - Save student data to a JSON file
 - Validate student name and grade inputs
@@ -42,7 +43,8 @@ Student Performance Tracker
 4. Delete Student
 5. Update Student Grade
 6. Show Highest and Lowest Grade
-7. Exit
+7. Search Student
+8. Exit
 Choose an option:
 ```
 
